@@ -14,8 +14,8 @@ func UsersDB() *gorm.DB {
 }
 
 type User struct {
-	ID   uint   `json:"id" gorm:"primaryKey"`
-	Name string `json:"name"`
+	ID   uint   
+	Name string 
 }
 
 func GetUsers() []User {
