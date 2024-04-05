@@ -21,6 +21,6 @@ type User struct {
 func GetUsers() []User {
 	db := UsersDB()
 	var users []User
-	db.Find(&users)
+	db.Find(&users) 
 	return users
 }
