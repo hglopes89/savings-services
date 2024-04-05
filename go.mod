@@ -1,4 +1,4 @@
-module services
+module github.com/hglopes89/savings-services
 
 go 1.22.2
 
