@@ -38,4 +38,6 @@ func CreateUserMock() {
 	db.Create(&User{Name: "h"})
 	db.Create(&User{Name: "a"})
 	db.Create(&User{Name: "d"})
+	db.Create(&User{Name: "i"})
+	db.Create(&User{Name: "s"})
 }
