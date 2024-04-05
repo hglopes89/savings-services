@@ -14,8 +14,8 @@ func UsersDB() *gorm.DB {
 }
 
 type User struct {
-	ID   uint   
-	Name string 
+	ID   uint
+	Name string
 }
 
 func GetUsers() []User {
@@ -35,4 +35,7 @@ func CreateUserMock() {
 	db.Create(&User{Name: "John"})
 	db.Create(&User{Name: "Doe"})
 	db.Create(&User{Name: "Jane"})
+	db.Create(&User{Name: "h"})
+	db.Create(&User{Name: "a"})
+	db.Create(&User{Name: "d"})
 }
