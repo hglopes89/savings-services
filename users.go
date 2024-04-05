@@ -21,6 +21,18 @@ type User struct {
 func GetUsers() []User {
 	db := UsersDB()
 	var users []User
-	db.Find(&users) 
+	db.Find(&users)
 	return users
+}
+
+func CreateUser(user User) {
+	db := UsersDB()
+	db.Create(&user)
+}
+
+func CreateUserMock() {
+	db := UsersDB()
+	db.Create(&User{Name: "John"})
+	db.Create(&User{Name: "Doe"})
+	db.Create(&User{Name: "Jane"})
 }
