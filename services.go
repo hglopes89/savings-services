@@ -1,5 +1,5 @@
 package services
 
 import (
-	"users"
+	"github.com/hglopes89/savings-services/users"
 )
